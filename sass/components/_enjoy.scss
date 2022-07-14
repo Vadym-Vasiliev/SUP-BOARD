@@ -1,0 +1,54 @@
+.enjoy {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.enjoy-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1200px;
+
+  &__img {
+    &--1 {
+      width: 470px;
+    }
+    &--2 {
+      width: 700px;
+      border-radius: 0px 500px 0px 0px;
+    }
+    &--3 {
+      width: 300px;
+      border-radius: 0px 0px 150px 0px;
+    }
+    &--4 {
+      width: 469px;
+      border-radius: 0px 200px 0px 0px;
+    }
+    &--5 {
+      width: 391px;
+      border-radius: 200px 0px 0px 0px;
+    }
+    &--6 {
+      width: 880px;
+      border-radius: 0px 0px 0px 400px;
+    }
+  }
+
+  &__text {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.21;
+
+    width: 300px;
+    border-radius: 0px 0px 0px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: $white;
+    background-color: $blue;
+  }
+}
