@@ -263,13 +263,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+ol,
+p {
   padding: 0;
   margin: 0;
-}
-
-ul,
-ol {
   list-style: none;
 }
 
@@ -283,8 +282,16 @@ img {
   height: auto;
 }
 
+body {
+  font-family: "Comfortaa", cursive;
+  font-family: "Inter", sans-serif;
+  line-height: 1.22;
+  color: #262c27;
+  background-color: #ffffff;
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -301,4 +308,103 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.btn {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  border: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.pocket {
+  padding-top: 150px;
+  padding-bottom: 171px;
+}
+
+.pocket-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pocket-left {
+  max-width: 663px;
+}
+.pocket-left__title {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 50px;
+  color: #0093a1;
+}
+.pocket-left__img {
+  position: absolute;
+  bottom: 0;
+  right: -193px;
+  width: 201px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.pocket-left__img:hover, .pocket-left__img:focus {
+  transform: scale(1.1);
+}
+.pocket-left__btn {
+  font-size: 40px;
+  padding: 18px 197px;
+  border: 2px solid #0093a1;
+  transform: scale(1);
+  transition: 250ms ease-out;
+  color: #0093a1;
+}
+.pocket-left__btn:hover, .pocket-left__btn:focus {
+  transform: scale(1.05);
+  border-color: #b9c400;
+  color: #262c27;
+  background-color: #b9c400;
+}
+
+.pocket-list {
+  position: relative;
+  max-width: 284px;
+}
+.pocket-list__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.pocket-list__title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.pocket-list__title--color {
+  margin-bottom: 30px;
+  color: #0093a1;
+}
+.pocket-list__text {
+  font-weight: 400;
+  font-size: 18px;
+}
+.pocket-list__text--margin {
+  margin-bottom: 50px;
+  width: 663px;
+}
+.pocket-list__text--width {
+  max-width: 256px;
+}
+
+.pocket-right {
+  position: relative;
+  width: 600px;
+  height: 627px;
+}
+.pocket-right__img {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 600px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,15 @@
 body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Inter', sans-serif;
+
+  line-height: 1.22;
+
+  color: $dark;
+  background-color: $white;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -19,4 +26,16 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.btn {
+  font-family: $font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  border: transparent;
+  cursor: pointer;
+
+  color: $white;
+  background-color: transparent;
 }

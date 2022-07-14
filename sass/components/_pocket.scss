@@ -1,0 +1,106 @@
+.pocket {
+  padding-top: 150px;
+  padding-bottom: 171px;
+}
+
+.pocket-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pocket-left {
+  max-width: 663px;
+  &__title {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+
+    color: $blue;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: -193px;
+    width: 201px;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  &__btn {
+    font-size: 40px;
+    padding: 18px 197px;
+    border: 2px solid $blue;
+
+    transform: scale(1);
+    transition: 250ms ease-out;
+
+    color: $blue;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      border-color: $green;
+      color: $dark;
+      background-color: $green;
+    }
+  }
+}
+
+.pocket-list {
+  position: relative;
+  max-width: 284px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+    &--color {
+      margin-bottom: 30px;
+      color: $blue;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+
+    &--margin {
+      margin-bottom: 50px;
+      width: 663px;
+    }
+
+    &--width {
+      max-width: 256px;
+    }
+  }
+}
+
+.pocket-right {
+  position: relative;
+  width: 600px;
+  height: 627px;
+
+  &__img {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 600px;
+  }
+}
