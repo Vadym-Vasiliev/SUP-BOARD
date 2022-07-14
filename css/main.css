@@ -472,4 +472,162 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #0093a1;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 83px;
+  background-color: #262c27;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__link {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 250ms linear, color 250ms linear;
+}
+.footer__link:hover, .footer__link:focus {
+  transform: scale(1.05);
+}
+.footer__link:hover .footer__svg, .footer__link:focus .footer__svg {
+  fill: #0093a1;
+}
+.footer__svg {
+  transition: fill 250ms linear;
+  fill: #ffffff;
+}
+.footer__instagram {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  color: #ffffff;
+}
+.footer__instagram::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 250ms linear;
+  background-color: #b9c400;
+}
+.footer__instagram:hover::before, .footer__instagram:focus::before {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+
+.footer-form-box {
+  position: relative;
+}
+.footer-form-box--1 {
+  margin-bottom: 68px;
+}
+.footer-form-box--2 {
+  margin-bottom: 50px;
+}
+
+.footer-form {
+  max-width: 500px;
+  margin-bottom: 97px;
+}
+.footer-form__title {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 38px;
+  color: #ffffff;
+}
+.footer-form__input {
+  width: 500px;
+  border: transparent;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+  background-color: transparent;
+}
+.footer-form__label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  font-weight: 700;
+  font-size: 18px;
+  transition: color 250ms linear, transform 250ms linear;
+  color: #ffffff;
+}
+.footer-form .footer-form__input:focus + .footer-form__label,
+.footer-form .footer-form__input:not(:placeholder-shown) + .footer-form__label {
+  transform: translateY(-50px);
+}
+.footer-form__btn {
+  padding: 10px 66px;
+  transform: scale(1);
+  transition: transform 250ms linear, background-color 250ms linear;
+  color: #262c27;
+  background-color: #ffffff;
+}
+.footer-form__btn:hover, .footer-form__btn:focus {
+  background-color: #b9c400;
+  transform: scale(1.05);
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 51px;
+  margin-top: 28px;
+}
+.footer-list__item {
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.footer-list__item:not(:last-child) {
+  margin-right: 52px;
+}
+.footer-list__item:hover, .footer-list__item:focus {
+  transform: scale(1.02);
+}
+.footer-list__img {
+  width: 260px;
+}
+
+.footer-list-second {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+}
+.footer-list-second__item:not(:last-child) {
+  margin-right: 90px;
+}
+.footer-list-second__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+  color: #ffffff;
+}
+.footer-list-second__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 250ms linear;
+  background-color: #b9c400;
+}
+.footer-list-second__link:hover::before, .footer-list-second__link:focus::before {
+  transform: scale(1);
+  transform-origin: bottom left;
 }/*# sourceMappingURL=main.css.map */
