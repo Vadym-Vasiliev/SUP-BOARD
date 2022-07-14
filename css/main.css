@@ -436,6 +436,13 @@ body {
   gap: 20px;
   width: 1200px;
 }
+.enjoy-box__img {
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.enjoy-box__img:hover, .enjoy-box__img:focus {
+  transform: scale(1.05);
+}
 .enjoy-box__img--1 {
   width: 470px;
 }
@@ -472,6 +479,11 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #0093a1;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.enjoy-box__text:hover, .enjoy-box__text:focus {
+  transform: scale(1.05);
 }
 
 .footer {
