@@ -9,10 +9,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -33,7 +33,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.1;
-  border: transparent;
+  border: none;
   cursor: pointer;
 
   color: $white;

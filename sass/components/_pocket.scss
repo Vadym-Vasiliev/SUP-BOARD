@@ -44,6 +44,7 @@
 .pocket-list {
   position: relative;
   max-width: 284px;
+  margin-bottom: 50px;
 
   &__item {
     &:not(:last-child) {
@@ -92,7 +93,7 @@
     bottom: 0;
     right: -193px;
     width: 201px;
-    height: 199px;
+    min-height: 199px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +119,7 @@
 .pocket-right {
   position: relative;
   width: 600px;
-  height: 627px;
+  min-height: 627px;
 
   &__img {
     position: absolute;

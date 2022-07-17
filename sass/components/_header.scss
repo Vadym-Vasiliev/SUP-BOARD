@@ -1,0 +1,157 @@
+.header {
+  position: relative;
+  background-image: url(../img/header-main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &__img {
+    width: 1920px;
+  }
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 57px;
+
+  gap: 100px;
+
+  &__link {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+
+      .header-top__svg {
+        fill: $blue;
+      }
+    }
+  }
+
+  &__svg {
+    transition: fill 250ms linear;
+    fill: $dark;
+  }
+
+  &__btn {
+    padding: 12px 77px 9px 71px;
+
+    transform: scale(1);
+    transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
+
+    background-color: $dark;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      color: $dark;
+      background-color: $green;
+    }
+  }
+
+  &__tel {
+    position: relative;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    display: inline-block;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    color: $dark;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+
+      transform: scale(0);
+      transform-origin: bottom right;
+      transition: transform 250ms linear;
+
+      background-color: $blue;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: scale(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+.header-content {
+  &__box {
+    margin-bottom: 120px;
+    margin-top: 263px;
+    max-width: 548px;
+    text-align: center;
+    margin-left: auto;
+  }
+  &__title {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+
+    color: $white;
+  }
+
+  &__text {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.12;
+
+    color: $white;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text-under {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 1.11;
+    opacity: 0.3;
+    margin-bottom: 33px;
+
+    color: $blue;
+
+    &--free {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-italic {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.21;
+
+    color: $blue;
+  }
+
+  &__img-up {
+    width: 1920px;
+  }
+  &__img-under {
+  }
+}
