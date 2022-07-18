@@ -325,8 +325,9 @@ body {
   background-image: url(../img/header-main.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -310px 0;
   min-height: 100vh;
-  padding-bottom: 1px;
+  padding-bottom: 224px;
 }
 
 .header-top {
@@ -334,6 +335,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding-top: 57px;
+  padding-bottom: 57px;
   gap: 100px;
 }
 .header-top__link {
@@ -397,11 +399,16 @@ body {
   position: relative;
 }
 .header-content__box {
-  margin-bottom: 120px;
+  margin-bottom: 0;
   margin-top: 263px;
   max-width: 548px;
   text-align: center;
   margin-left: auto;
+  margin-right: 40px;
+}
+.header-content__box--top {
+  margin-top: 120px;
+  margin-bottom: 40px;
 }
 .header-content__title {
   font-family: "Comfortaa", cursive;
@@ -427,22 +434,25 @@ body {
   font-size: 130px;
   line-height: 1.11;
   opacity: 0.3;
-  margin-bottom: 33px;
   color: #0093a1;
 }
 .header-content__text-under--free {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -110px;
+  left: 300px;
   margin-bottom: 0;
   z-index: 1;
 }
 .header-content__text-italic {
+  position: absolute;
+  right: 140px;
+  bottom: -90px;
   font-style: italic;
   font-weight: 300;
   font-size: 32px;
   line-height: 1.21;
   z-index: 1;
+  max-width: 359px;
   color: #0093a1;
 }
 .header-content__img-up {
@@ -453,36 +463,39 @@ body {
   position: relative;
   background-color: #262c27;
   background-image: url();
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .tree::before {
   content: "";
   position: absolute;
-  top: -120px;
-  left: 110px;
+  top: -68px;
+  left: -34px;
   width: 100%;
   height: 456px;
   background-image: url(../img/header-under.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .tree::after {
   content: "";
   position: absolute;
-  bottom: -40px;
-  left: 110px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 456px;
   background-image: url(../img/header-up.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .specs {
   background-image: url(../../img/specs-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0px -50px;
   min-height: 100vh;
-  padding-top: 30px;
+  padding-top: 96px;
   padding-bottom: 80px;
 }
 
@@ -728,7 +741,7 @@ body {
   transition: transform 250ms linear;
 }
 .enjoy-box__img:hover, .enjoy-box__img:focus {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .enjoy-box__img--1 {
   width: 470px;
