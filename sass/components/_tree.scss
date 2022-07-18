@@ -1,0 +1,28 @@
+.tree {
+  position: relative;
+  background-color: $dark;
+  background-image: url();
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 110px;
+    width: 100%;
+    height: 456px;
+    background-image: url(../img/header-under.png);
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 110px;
+    width: 100%;
+    height: 456px;
+    background-image: url(../img/header-up.svg);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,13 +1,9 @@
 .header {
-  position: relative;
   background-image: url(../img/header-main.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-
-  &__img {
-    width: 1920px;
-  }
+  padding-bottom: 1px;
 }
 
 .header-top {
@@ -95,6 +91,7 @@
   }
 }
 .header-content {
+  position: relative;
   &__box {
     margin-bottom: 120px;
     margin-top: 263px;
@@ -136,7 +133,11 @@
     color: $blue;
 
     &--free {
+      position: absolute;
+      bottom: 0;
+      right: 0;
       margin-bottom: 0;
+      z-index: 1;
     }
   }
 
@@ -145,13 +146,12 @@
     font-weight: 300;
     font-size: 32px;
     line-height: 1.21;
+    z-index: 1;
 
     color: $blue;
   }
 
   &__img-up {
     width: 1920px;
-  }
-  &__img-under {
   }
 }
