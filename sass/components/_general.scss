@@ -39,3 +39,17 @@ body {
   color: $white;
   background-color: transparent;
 }
+
+.btn-play {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid $white;
+  cursor: pointer;
+  text-align: center;
+
+  transform: scale(1);
+  transition: transform 250ms linear, border-color 250ms linear;
+
+  background-color: transparent;
+}

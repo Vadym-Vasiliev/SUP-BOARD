@@ -2,7 +2,7 @@
   background-image: url(../../img/specs-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -50px;
+  background-position: center -150px;
   min-height: 100vh;
 
   padding-top: 96px;
@@ -23,17 +23,29 @@
 
 .specs-up-left {
   max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  gap: 82px;
 
   &__text {
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: 82px;
 
     color: $white;
+  }
 
-    &--play {
-      margin-bottom: 0;
-    }
+  &__span {
+    display: block;
+    width: 97px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: -18px;
+    transition: color 250ms linear;
+
+    color: $white;
   }
 
   &__right {
@@ -44,33 +56,25 @@
     margin-left: auto;
   }
 
-  &__link {
-    width: 70px;
-    height: 70px;
-    border: 2px solid $white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 12px;
-
-    transform: scale(1);
-    transition: transform 250ms linear, border-color 250ms linear;
-
+  &__btn {
     &:hover,
     &:focus {
-      transform: scale(1.05);
       border-color: $green;
+      transform: scale(1.05);
 
       .specs-up-left__svg {
         fill: $green;
       }
+
+      .specs-up-left__span {
+        color: $green;
+      }
     }
   }
-
   &__svg {
     transition: fill 250ms linear;
     fill: $white;
+    margin-top: 17px;
   }
 }
 

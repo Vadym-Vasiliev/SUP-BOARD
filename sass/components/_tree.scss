@@ -2,19 +2,19 @@
   position: relative;
   background-color: $dark;
   background-image: url();
-  padding-top: 90px;
-  padding-bottom: 90px;
+  min-height: 180px;
 
   &::before {
     content: '';
     position: absolute;
-    top: -68px;
+    top: 0;
     left: -34px;
     width: 100%;
-    height: 456px;
+    min-height: 456px;
     background-image: url(../img/header-under.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center -130px;
   }
   &::after {
     content: '';
@@ -22,9 +22,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 456px;
+    min-height: 456px;
     background-image: url(../img/header-up.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center -26px;
   }
 }
